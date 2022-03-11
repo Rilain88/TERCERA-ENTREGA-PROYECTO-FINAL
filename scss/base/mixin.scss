@@ -1,0 +1,13 @@
+/* Mixin no importado en scss "section" */
+
+@mixin encabezado ($color , $ancho, $relleno, $bordes) {
+    background: $color;
+    width: $ancho;
+    padding: $relleno;
+    border: $bordes;
+}
+
+section.encabezado{
+    @include encabezado( linear-gradient(to bottom , rgb(238, 213, 140), rgb(194, 115, 70) )  , 40px, 30px , 2px solid rgb(173, 94, 49 ))
+}
+

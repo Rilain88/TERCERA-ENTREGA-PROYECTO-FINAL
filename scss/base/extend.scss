@@ -1,0 +1,28 @@
+
+%flex-1{
+    display:flex;
+    justify-content: center;
+}
+
+%flex-2{
+    display:flex;
+    justify-content: space-around;
+}
+
+%grid-1{
+    display: grid;
+    justify-content: center;
+}
+
+footer div.footer{
+    @extend %flex-1;
+}
+
+.logo{
+    @extend %flex-1;
+}
+
+div.grid-container{
+    @extend %grid-1;
+}
+

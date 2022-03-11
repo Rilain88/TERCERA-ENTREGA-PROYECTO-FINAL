@@ -1,0 +1,19 @@
+@import '../base/variables';
+@import '../base/extend';
+
+
+header{
+    nav{
+        div.container-fluid{
+                background: $bg-color;
+                border: $border-navbar;
+                flex-basis: 100%;
+                display: flex;
+                justify-content: space-around;
+                font-family: 'Dancing Script', cursive;
+                font-size: 30px;
+            }
+            
+        }
+}
+

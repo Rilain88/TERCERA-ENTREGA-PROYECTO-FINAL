@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+      background-image: url(../Images/gral/fondo.jpg);
+      background-size: cover;
+      background-attachment:fixed;
+  }
+  
+  p{
+      color: rgb(133, 70, 34);
+      font-family: 'Dancing Script', cursive;
+      font-size: 30px;
+  }
+  
+  /* Contenedor Navbar */
+  .container-fluid{
+      background: linear-gradient(to bottom, rgb(165, 98, 59), rgb(238, 213, 140) );
+      border: 1px solid rgb(173, 94, 49);
+      flex-basis: 100%;
+      display: flex;
+      justify-content: space-around;
+      font-family: 'Dancing Script', cursive;
+      font-size: 30px;
+  }
+  /*FIN Contenedor Navbar */
+  
+  
+  /*Logo*/
+  .logo{
+      padding: 20px;
+      display: flex;
+      border-radius: 100%;
+      justify-content: center;
+  
+  }
+  .logo img{
+      width: 150px;
+      border-radius: 100%;
+      border: 2px solid rgb(173, 94, 49);  
+  }
+  /* FIN Logo*/
+  
+  
+  
+  /* HTML Quiensoy*/
+  .encabezado{
+      background: linear-gradient(to bottom , rgb(238, 213, 140), rgb(194, 115, 70) );
+      padding: 30px;
+      margin: 20px;
+      border: 2px solid rgb(173, 94, 49);
+      justify-content: space-around;
+  
+  }
+  .encabezado img{
+      width: 150px;
+      border: 4px solid rgb(173, 94, 49);
+  }
+  /* FIN HTML Quiensoy*/
+  
+  
+  
+  
+  /* Carrusel Imagenes HTML INDEX*/
+  .carousel-inner{
+      width: 70%;
+      margin: auto;
+      background: linear-gradient(to bottom , rgb(238, 213, 140), rgb(194, 115, 70) );
+      border: 2px solid rgb(173, 94, 49);
+      padding: 10px;
+  }
+  /*FIN Carrusel Imagenes HTML INDEX*/
+  
+  
+  
+  
+  /*promociones*/
+  .promociones-container{
+      margin: auto;
+      padding: 50px;
+      display: flex;
+      justify-content: space-around;
+      
+  }
+  
+  .promociones-container img{
+      width: 70px;
+  }
+  /*FIN promociones*/
+  
+  
+  
+  
+  /* Navegable HTML*/
+  .navegable{
+      padding: 50px;
+  }
+  .iconos-container{
+      display: flex;
+      justify-content: center;
+  }
+  .navegable .iconos-container img{
+      width: 100px;
+  }
+  /*FIN Navegable HTML*/
+  
+  
+  
+  
+  
+  /*Redes HTML*/
+  .footer {
+      display:flex;
+      justify-content: center;
+      background: rgba(185, 102, 6, 0.521);
+      min-width: 30px;
+      padding: 5px;
+      margin-top: 20px ;
+      
+  }
+  
+  /*FIN Redes HTML*/
+  
+  
+  
+  /* Carrusel Imagenes HTML Productos*/
+  .photo-container{
+      padding: 30px;
+      font-family: 'Dancing Script', cursive;
+  }
+  .grid-container{
+      display: grid;
+      grid-template-rows: repeat(5 , 250px);
+      grid-template-columns: repeat(3 , 250px);
+      justify-content: center;  
+  }
+  .photo-container .grid-container img{
+      width: 200px;
+      border: 4px solid rgb(173, 94, 49);
+      transition-property: all;
+      transition-duration: 1.5s;
+  }
+  .grid-container img:hover{
+      transform: scale(1.4);
+  }
+  /*FIN Carrusel Imagenes HTML Productos*/
+  
+  
+  
+  /*mobile style*/
+  @media screen and (max-width: 480px){
+      body{
+          background: linear-gradient(to bottom , rgb(238, 213, 140), rgb(194, 115, 70) );
+          background-size: cover;
+          background-attachment:fixed;
+      }
+       .grid-container{ 
+              height: 600px;
+              display: grid;
+              flex-basis: 50%;
+              grid-template-columns: repeat(1, 50%);
+              grid-template-rows: repeat(15,50%);
+      }
+  }
+  /*mobile style*/

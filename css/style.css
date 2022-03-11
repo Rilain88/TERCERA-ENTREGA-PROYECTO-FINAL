@@ -1,0 +1,172 @@
+body {
+  background-image: url(../Images/gral/fondo.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background: linear-gradient(to bottom, #eed58c, #c27346);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+.logo, footer div.footer {
+  display: flex;
+  justify-content: center;
+}
+
+div.grid-container {
+  display: grid;
+  justify-content: center;
+}
+
+header nav div.container-fluid {
+  background: linear-gradient(to bottom, #a5623b, #eed58c);
+  border: 1px solid #ad5e31;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+}
+
+footer div.footer, .logo {
+  display: flex;
+  justify-content: center;
+}
+
+div.grid-container {
+  display: grid;
+  justify-content: center;
+}
+
+section.logo {
+  padding: 20px;
+  border-radius: 100%;
+}
+section.logo a img {
+  width: 150px;
+  border-radius: 100%;
+  border: 2px solid #ad5e31;
+}
+
+section div div.carousel-inner {
+  width: 70%;
+  margin: auto;
+  background: linear-gradient(to bottom, #eed58c, #c27346);
+  border: 2px solid #ad5e31;
+  padding: 10px;
+}
+
+section.photo-container {
+  padding: 30px;
+  font-family: "Dancing Script", cursive;
+}
+section.photo-container div.grid-container {
+  grid-template-rows: repeat(5, 250px);
+  grid-template-columns: repeat(3, 250px);
+}
+section.photo-container div.grid-container img {
+  width: 200px;
+  border: 4px solid #ad5e31;
+  transition-property: all;
+  transition-duration: 1.5s;
+}
+section.photo-container div.grid-container img:hover {
+  transform: scale(1.4);
+}
+@media screen and (max-width: 480px) {
+  section.photo-container div.grid-container {
+    height: 600px;
+    display: grid;
+    flex-basis: 50%;
+    grid-template-columns: repeat(1, 50%);
+    grid-template-rows: repeat(15, 50%);
+  }
+}
+
+section div.promociones-container {
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+section div.promociones-container img {
+  width: 70px;
+}
+
+section.encabezado {
+  background: linear-gradient(to bottom, #eed58c, #c27346);
+  padding: 30px;
+  margin: 20px;
+  border: 2px solid #ad5e31;
+  justify-content: space-around;
+}
+section.encabezado img {
+  width: 150px;
+  border: 4px solid #ad5e31;
+}
+
+section.navegable {
+  padding: 50px;
+}
+section.navegable div.iconos-container {
+  display: flex;
+  justify-content: center;
+}
+section.navegable div.iconos-container img {
+  width: 100px;
+}
+
+section.h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Dancing Script", cursive;
+  color: rgba(26, 71, 5, 0.445);
+}
+
+section.h2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Dancing Script", cursive;
+  color: rgba(26, 71, 5, 0.445);
+}
+
+footer div.footer, .logo {
+  display: flex;
+  justify-content: center;
+}
+
+div.grid-container {
+  display: grid;
+  justify-content: center;
+}
+
+footer div.footer {
+  background: rgba(185, 102, 6, 0.521);
+  min-width: 30px;
+  padding: 5px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 480px) {
+  footer {
+    min-width: 30px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer.footer-container {
+    margin-top: 4000px;
+  }
+}
+
+p {
+  color: #854622;
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

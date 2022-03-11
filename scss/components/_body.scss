@@ -1,0 +1,20 @@
+@import '../base/variables';
+@import '../base/map';
+
+body{
+      background-image: $bg-image;
+      background-size: cover;
+      background-attachment:fixed;
+}
+
+body{
+  @media screen and (max-width: 480px){
+    
+        background: 
+        map-get($body, bg-media);
+        background-size:
+        map-get($body, background-size);
+        background-attachment:
+        map-get($body, background-attachment);
+  }
+}
